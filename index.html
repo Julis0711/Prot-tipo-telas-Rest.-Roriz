@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Restaurante Martins Roriz — 13 anos de tradição</title>
+<meta name="description" content="Self-service tradicional com sabor caseiro. Conheça nossa história, localização, dashboard e comanda digital." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navegação entre as 4 telas (apenas para visualização do protótipo) -->
+<nav class="screens-nav" aria-label="Telas">
+  <a href="#landing" class="active" data-screen>Início</a>
+  <a href="#login" data-screen>Login</a>
+  <a href="#dashboard" data-screen>Dashboard</a>
+  <a href="#comanda" data-screen>Comanda</a>
+</nav>
+
+<!-- ===================== TELA 1 — LANDING ===================== -->
+<section id="landing" class="screen">
+  <header class="site-nav">
+    <div class="container row">
+      <a href="#landing" class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/><path d="m2.1 21.8 6.4-6.3"/><path d="m19 5-7 7"/></svg>
+        Martins Roriz
+      </a>
+      <nav class="nav-links">
+        <a href="#landing" class="primary-text">Início</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#comanda">Comanda</a>
+        <a href="#login" class="cta">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="img/hero-restaurant.jpg" alt="Salão do Restaurante Martins Roriz" />
+    <div class="hero-inner">
+      <span class="badge">Desde 2013</span>
+      <h1 class="serif">Sabor caseiro,<br/>tradição de família.</h1>
+      <p class="lead">Há 13 anos servindo o melhor self-service da região, com pratos preparados todos os dias com carinho e ingredientes frescos.</p>
+      <div class="cta-row">
+        <a href="#localizacao" class="btn btn-primary">Como chegar</a>
+        <a href="#login" class="btn btn-outline">Acesso interno</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <span class="eyebrow">Nossa história</span>
+        <h2 class="serif">Uma cozinha,<br/>três gerações.</h2>
+        <p class="muted" style="margin-top:1.5rem;line-height:1.7">O Martins Roriz nasceu da vontade de levar a comida feita em casa para a mesa de quem trabalha duro. Em mais de uma década, nos tornamos parte da rotina do bairro, recebendo clientes que viraram amigos.</p>
+        <p class="muted" style="margin-top:1rem;line-height:1.7">Cada prato carrega o tempero de sempre, o respeito pelo ingrediente e a memória das receitas de família.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <svg width="24" height="24" style="margin:0 auto;color:var(--primary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <p class="v serif">13 anos</p><p class="s">de tradição</p>
+        </div>
+        <div class="stat">
+          <svg width="24" height="24" style="margin:0 auto;color:var(--primary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <p class="v serif">+500</p><p class="s">clientes/dia</p>
+        </div>
+        <div class="stat">
+          <svg width="24" height="24" style="margin:0 auto;color:var(--primary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <p class="v serif">Premiado</p><p class="s">pelo bairro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao" class="section-alt">
+    <div class="container section" style="padding-top:6rem;padding-bottom:6rem">
+      <div class="grid-2">
+        <div>
+          <span class="eyebrow">Visite-nos</span>
+          <h2 class="serif">Onde estamos</h2>
+          <ul class="info-list">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Rua Emídio Fernandes, 123 — Centro<br/><span class="muted">Martins — RN</span></span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Seg a Sáb · 11h às 15h</span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(84) 0000-0000</span></li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe title="Mapa de localização" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-43.2096%2C-22.9168%2C-43.1696%2C-22.8968&layer=mapnik"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container">© 2026 Restaurante Martins Roriz · Todos os direitos reservados</div></footer>
+</section>
+
+<!-- ===================== TELA 2 — LOGIN ===================== -->
+<section id="login" class="screen">
+  <div class="login-grid">
+    <div class="login-sidebar">
+    <img src="img/fic-rest.jpeg" alt="Salão do Restaurante" class="sidebar-img" />
+    
+    <div class="sidebar-content">
+        <div class="logo">Martins Roriz</div>
+        <p class="slogan">"O coração do restaurante agora cabe na palma da mão."</p>
+        <span class="subtext">Sistema de gestão Martins Roriz</span>
+    </div>
+</div>
+    <div class="login-form-wrap">
+      <div class="login-form">
+        <h1>Bem-vindo de volta</h1>
+        <p class="sub">Selecione seu perfil e informe sua senha.</p>
+
+        <div class="tabs" id="login-tabs">
+          <button type="button" class="active" data-profile="master">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            Senha Mestre
+          </button>
+          <button type="button" data-profile="operational">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+            Operacional
+          </button>
+        </div>
+
+        <form onsubmit="event.preventDefault();location.hash=document.querySelector('#login-tabs .active').dataset.profile==='master'?'#dashboard':'#comanda'">
+          <div class="field">
+            <label>Usuário</label>
+            <input type="text" value="judson" />
+          </div>
+          <div class="field with-icon">
+            <label>Senha</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <input type="password" placeholder="••••••••" />
+          </div>
+          <button type="submit" class="btn-block">Entrar como proprietário</button>
+        </form>
+        <a href="#landing" class="back-link">← Voltar ao site</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TELA 3 — DASHBOARD ===================== -->
+<section id="dashboard" class="screen">
+  <header class="site-nav">
+    <div class="container row">
+      <a href="#landing" class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/></svg>
+        Martins Roriz
+      </a>
+      <nav class="nav-links">
+        <a href="#landing">Início</a>
+        <a href="#dashboard" class="primary-text">Dashboard</a>
+        <a href="#comanda">Comanda</a>
+        <a href="#login" class="cta">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom:5rem">
+    <div class="dash-head">
+      <div>
+        <p class="muted" style="font-size:.875rem">Olá, Judson</p>
+        <h1>Resumo financeiro</h1>
+      </div>
+      <button class="btn btn-primary" style="padding:.625rem 1rem;font-size:.875rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        Novo lançamento
+      </button>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-top"><p class="kpi-label">Saldo do dia</p></div><p class="kpi-value">R$ 2.847,50</p><p class="kpi-trend up">+12,4% vs. mês anterior</p></div>
+      <div class="kpi"><div class="kpi-top"><p class="kpi-label">Entradas (mês)</p></div><p class="kpi-value">R$ 48.320</p><p class="kpi-trend up">+8,1% vs. mês anterior</p></div>
+      <div class="kpi"><div class="kpi-top"><p class="kpi-label">Saídas (mês)</p></div><p class="kpi-value">R$ 19.140</p><p class="kpi-trend down">-3,2% vs. mês anterior</p></div>
+      <div class="kpi"><div class="kpi-top"><p class="kpi-label">Lucro estimado</p></div><p class="kpi-value">R$ 29.180</p><p class="kpi-trend up">+14,8% vs. mês anterior</p></div>
+    </div>
+
+    <div class="dash-grid">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Calendário financeiro</h2>
+          <span class="muted" style="font-size:.875rem">Maio de 2026</span>
+        </div>
+        <div class="cal-dow"><div>D</div><div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div></div>
+        <div class="cal-grid" id="cal"></div>
+        <div class="legend"><span><i class="p"></i>Hoje</span><span><i class="s"></i>Com lançamentos</span></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Últimos lançamentos</h2></div>
+        <ul class="tx-list">
+          <li><div><p class="tx-desc">Vendas almoço — terça</p><p class="tx-time">14:32</p></div><span class="tx-val in">+ R$ 1.420,00</span></li>
+          <li><div><p class="tx-desc">Compra de hortifruti</p><p class="tx-time">10:15</p></div><span class="tx-val out">- R$ 380,50</span></li>
+          <li><div><p class="tx-desc">Comanda mesa 7 (bebidas)</p><p class="tx-time">13:48</p></div><span class="tx-val in">+ R$ 96,00</span></li>
+          <li><div><p class="tx-desc">Conta de gás</p><p class="tx-time">09:00</p></div><span class="tx-val out">- R$ 220,00</span></li>
+          <li><div><p class="tx-desc">Vendas almoço — segunda</p><p class="tx-time">ontem</p></div><span class="tx-val in">+ R$ 1.310,00</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</section>
+
+<!-- ===================== TELA 4 — COMANDA ===================== -->
+<section id="comanda" class="screen">
+  <div class="comanda-wrap">
+    <header class="site-nav">
+      <div class="container row">
+        <a href="#landing" class="brand">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/></svg>
+          Martins Roriz
+        </a>
+        <nav class="nav-links">
+          <a href="#landing">Início</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#comanda" class="primary-text">Comanda</a>
+          <a href="#login" class="cta">Entrar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="comanda-main">
+      <div class="comanda-head">
+        <div>
+          <p class="eyebrow" style="color:var(--muted-foreground)">Comanda digital</p>
+          <h1>Lançar bebidas</h1>
+        </div>
+        <div class="mesa"><span class="muted">Mesa</span><input value="7" id="mesa-input" /></div>
+      </div>
+
+      <div class="bebidas" id="bebidas"></div>
+    </main>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar-inner">
+        <div class="bb-info">
+          <p id="bb-count">0 itens · Mesa 7</p>
+          <p id="bb-total">R$ 0,00</p>
+        </div>
+        <button class="btn btn-primary" id="enviar" disabled style="opacity:.4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+          Enviar pedido
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Tabs do prototipo */
+function syncNav(){
+  const hash = location.hash && document.querySelector(location.hash) ? location.hash : '#landing';
+  document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('is-active', '#'+s.id===hash));
+  document.querySelectorAll('.screens-nav a').forEach(a=>a.classList.toggle('active', a.getAttribute('href')===hash));
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', syncNav); syncNav();
+
+/* Login - troca de perfil */
+document.querySelectorAll('#login-tabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('#login-tabs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const isMaster = btn.dataset.profile==='master';
+    document.querySelector('.login-form input[type=text]').value = isMaster?'judson':'garcom01';
+    document.querySelector('.btn-block').textContent = 'Entrar como ' + (isMaster?'proprietário':'operacional');
+  });
+});
+
+/* Dashboard - calendário */
+(function(){
+  const today = new Date();
+  const y = today.getFullYear(), m = today.getMonth();
+  const days = new Date(y, m+1, 0).getDate();
+  const first = new Date(y, m, 1).getDay();
+  const cal = document.getElementById('cal'); if(!cal) return;
+  let html = '';
+  for(let i=0;i<first;i++) html += '<div class="cal-cell empty"></div>';
+  for(let d=1; d<=days; d++){
+    const isToday = d===today.getDate();
+    const intensity = (d*37)%100;
+    const has = intensity>30;
+    const cls = isToday?'today':(has?'has':'');
+    html += `<button class="cal-cell ${cls}">${d}</button>`;
+  }
+  cal.innerHTML = html;
+})();
+
+/* Comanda */
+const bebidas = [
+  {id:1,nome:"Cerveja Long Neck",preco:9,icon:'<path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M9 12v6"/><path d="M13 12v6"/><path d="M14 7.5c-1 0-1.44.5-3 .5s-2-.5-3-.5-1.72.5-2.5.5a2.5 2.5 0 0 1 0-5c.78 0 1.57.5 2.5.5C9.44 3.5 10 3 12 3s2.56.5 3.5.5c.93 0 1.72-.5 2.5-.5a2.5 2.5 0 0 1 0 5c-.78 0-1.5-.5-2.5-.5Z"/><path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/>'},
+  {id:2,nome:"Refrigerante Lata",preco:6,icon:'<path d="M15.2 22H8.8a2 2 0 0 1-2-1.79L5 3h14l-1.81 17.21A2 2 0 0 1 15.2 22Z"/><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>'},
+  {id:3,nome:"Suco Natural",preco:8,icon:'<path d="M15.2 22H8.8a2 2 0 0 1-2-1.79L5 3h14l-1.81 17.21A2 2 0 0 1 15.2 22Z"/><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>'},
+  {id:4,nome:"Água Mineral",preco:4,icon:'<path d="M15.2 22H8.8a2 2 0 0 1-2-1.79L5 3h14l-1.81 17.21A2 2 0 0 1 15.2 22Z"/><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>'},
+  {id:5,nome:"Café Espresso",preco:5,icon:'<path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/>'},
+  {id:6,nome:"Taça de Vinho",preco:18,icon:'<path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/>'}
+];
+const itens = {1:2,4:1};
+const grid = document.getElementById('bebidas');
+function render(){
+  grid.innerHTML = bebidas.map(b=>{
+    const q = itens[b.id]||0;
+    return `<div class="bebida ${q?'active':''}">
+      <div class="bebida-top">
+        <div class="bebida-info">
+          <div class="bebida-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${b.icon}</svg></div>
+          <div><p class="bebida-name">${b.nome}</p><p class="bebida-price">R$ ${b.preco.toFixed(2).replace('.',',')}</p></div>
+        </div>
+      </div>
+      <div class="bebida-controls">
+        <button class="qty-btn" data-act="sub" data-id="${b.id}" ${q?'':'disabled'}>−</button>
+        <span class="qty-num">${q}</span>
+        <button class="qty-btn add" data-act="add" data-id="${b.id}">+</button>
+      </div>
+    </div>`;
+  }).join('');
+  const total = bebidas.reduce((s,b)=>s+(itens[b.id]||0)*b.preco,0);
+  const qtd = Object.values(itens).reduce((a,b)=>a+b,0);
+  const mesa = document.getElementById('mesa-input').value;
+  document.getElementById('bb-count').textContent = `${qtd} ${qtd===1?'item':'itens'} · Mesa ${mesa}`;
+  document.getElementById('bb-total').textContent = `R$ ${total.toFixed(2).replace('.',',')}`;
+  const enviar = document.getElementById('enviar');
+  enviar.disabled = !qtd; enviar.style.opacity = qtd?1:.4;
+}
+grid.addEventListener('click', e=>{
+  const btn = e.target.closest('button[data-act]'); if(!btn) return;
+  const id = +btn.dataset.id;
+  if(btn.dataset.act==='add') itens[id] = (itens[id]||0)+1;
+  else { itens[id] = (itens[id]||0)-1; if(itens[id]<=0) delete itens[id]; }
+  render();
+});
+document.getElementById('mesa-input').addEventListener('input', render);
+render();
+</script>
+</body>
+</html>

@@ -44,7 +44,7 @@
       <h1 class="serif">Sabor caseiro,<br/>tradição de família.</h1>
       <p class="lead">Há 13 anos servindo o melhor self-service da região, com pratos preparados todos os dias com carinho e ingredientes frescos.</p>
       <div class="cta-row">
-        <a href="#localizacao" class="btn btn-primary">Como chegar</a>
+        <a <a href="#localizacao" class="btn btn-primary" data-scroll>Como chegar</a>
         <a href="#login" class="btn btn-outline">Acesso interno</a>
       </div>
     </div>
@@ -253,9 +253,17 @@
 </section>
 
 <script>
-/* Tabs do prototipo */
 function syncNav(){
-  const hash = location.hash && document.querySelector(location.hash) ? location.hash : '#landing';
+  let hash = location.hash && document.querySelector(location.hash) ? location.hash : '#landing';
+
+  // Se clicar em #localizacao, mantém a tela id="landing" ativa
+  if (hash === '#localizacao') {
+    hash = '#landing';
+    document.getElementById('landing').classList.add('is-active');
+    document.querySelector('section#localizacao').scrollIntoView({ behavior: 'smooth' });
+    return;
+  }
+
   document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('is-active', '#'+s.id===hash));
   document.querySelectorAll('.screens-nav a').forEach(a=>a.classList.toggle('active', a.getAttribute('href')===hash));
   window.scrollTo(0,0);
@@ -268,7 +276,7 @@ document.querySelectorAll('#login-tabs button').forEach(btn=>{
     document.querySelectorAll('#login-tabs button').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     const isMaster = btn.dataset.profile==='master';
-    document.querySelector('.login-form input[type=text]').value = isMaster?'judson':'garcom01';
+    document.querySelector('.login-form input[type=text]').value = isMaster?'judson':'funcionario01';
     document.querySelector('.btn-block').textContent = 'Entrar como ' + (isMaster?'proprietário':'operacional');
   });
 });
